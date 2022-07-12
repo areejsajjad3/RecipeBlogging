@@ -1,0 +1,130 @@
+<html>
+
+<head>
+    <title>
+        <%=title%>
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+        background-image: url("https://blog.chtrbox.com/wp-content/uploads/2017/01/food-blog.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .form {
+        position: relative;
+        z-index: 1;
+        background: rgba(7, 7, 7, 0.8);
+        max-width: 660px;
+        padding: 45px;
+        text-align: center;
+        margin: 0 auto 25px;
+        margin-top: 50px;
+        box-shadow: 0px 0px 10px 10px rgb(36, 35, 35);
+    }
+    
+    .form input {
+        font-family: "Roboto", sans-serif;
+        outline: 1;
+        background: #f2f2f2;
+        width: 100%;
+        border: 0;
+        margin: 0 0 15px;
+        padding: 20px;
+        box-sizing: border-box;
+        font-size: 14px;
+    }
+    
+    .form button {
+        font-family: "Roboto", sans-serif;
+        text-transform: uppercase;
+        outline: 0;
+        background: #4CAF50;
+        width: 50px;
+        border: 0;
+        padding: 15px;
+        color: #ffffff;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    
+    .form button:hover,
+    .form button:active {
+        background: #43A047;
+    }
+    
+    .me {
+        color: #f2f2f2;
+        font-weight: bold;
+    }
+    
+    .form .message {
+        margin: 15px 0 0;
+        color: aliceblue;
+        font-size: 12px;
+    }
+    
+    h2 {
+        color: aliceblue;
+    }
+    
+    .form .message a {
+        color: #4CAF50;
+        text-decoration: none;
+        font-size: 20px;
+    }
+</style>
+
+<body>
+
+    <div class="form">
+        <form action="/recipesubmission" method="POST" class="create-recipe">
+            <h2>Make My RECIPE</h2>
+            <input type="text" class="box" id="name" name="name" placeholder="Recipe Name" required />
+            <br>
+            <input class="file-upload-input" type="file" onchange="readURL(this)" accept="Image/* " name="myimg">
+            <br>
+            <input type="textarea" class="box" id="Ingredient_1" name="Ingredient1" placeholder="First ingredient" required />
+            <br>
+            <input type="textarea" class="box" id="Ingredient_2" name="Ingredient2" placeholder="Second ingredient" required />
+            <br>
+            <input type="textarea" class="box" id="Ingredient_3" name="Ingredient3" placeholder="Third ingredient" />
+            <br>
+            <input type="textarea" class="box" id="Ingredient_4" name="Ingredient4" placeholder="Fourth ingredient" />
+            <br>
+            <input type="textarea" class="box" id="Ingredient_5" name="Ingredient5" placeholder="Fifth ingredient" />
+            <br>
+            <br>
+            <input type="submit" value="Submit My Recipe" id="submit" style=" 
+                text-transform: uppercase;
+                outline: 0;
+                background: #4CAF50;
+                width: 100%;
+                border: 0;
+                padding: 15px;
+                color: #ffffff;
+                font-size: 14px;
+                cursor: pointer;" />
+        </form>
+        <p class="message">
+
+
+            <a href="/myrecipe">See my recipe</a>
+            <br>
+            <br>
+            <a href="/">Don't want to create? Go back </a>
+
+
+        </p>
+
+
+
+
+    </div>
+
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+</body>
+
+</html>

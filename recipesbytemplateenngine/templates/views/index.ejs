@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= title %>
+    </title>
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPYBMkoxBBJi9vkeBZPpLUl51F9-46Vn7_MQ&usqp=CAU" type="image/icon">
+    <style type="text/css">
+        .inner {}
+        
+        .inner img {
+            transition: all 1.1s ease;
+        }
+        
+        .inner:hover img {
+            transform: scale(1.2);
+        }
+        
+        .hearderset {
+            padding-top: 100px;
+            box-sizing: border-box;
+        }
+        
+        .hearderset h1 {
+            top: 0%;
+            font-size: 72px;
+            padding-bottom: 35px;
+            font-weight: bold;
+        }
+        
+        .hearderset h3 {
+            font-weight: bold;
+            font-size: 22px;
+            padding-bottom: 55px;
+        }
+        
+        body {
+            font-family: helvetica;
+        }
+        
+        #home-bg-img {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            transform: translateX(-50%) translateY(-50%);
+            height: auto;
+            z-index: -1;
+        }
+        
+        #home-content {
+            width: 100%;
+            height: 100%;
+            display: table;
+            margin-top: 57px;
+        }
+        
+        #home-content-inner {
+            display: table-cell;
+            vertical-align: middle;
+        }
+        
+        #home-heading h1 {
+            color: white;
+            font-size: 81px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 0;
+        }
+        
+        #home-heading h2 {
+            color: white;
+            font-size: 55px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 0;
+        }
+        
+        #home-heading h2 span {
+            color: #da0a94;
+            font-weight: 700;
+        }
+        
+        #home-text p {
+            color: white;
+            font-size: 18px;
+            font-weight: 100;
+            margin: 8px 0 20px 0;
+        }
+        
+        .btn-general {
+            font-family: tahoma;
+            font-size: 9px;
+            margin: 0 6px;
+            padding: 12px 46px 12px 46px;
+            transition: all 0.4s;
+            color: white;
+            border-radius: 95px;
+            background-color: #f4c613;
+        }
+        
+        .btn-warning {
+            font-family: tahoma;
+            font-size: 2px;
+            margin: 0 6px;
+            padding: 12px 46px 12px 46px;
+            transition: all 0.4s;
+            color: white;
+            border-radius: 95px;
+            background-color: #f413c3;
+        }
+        
+        .headerText h1 {
+            margin: 280px 0 40px 0;
+            color: white;
+            font-size: 74px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 0;
+        }
+        
+        .wib h2 {
+            font-size: 34px;
+            font-weight: bold;
+        }
+        
+        .Contact-form {
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 20px;
+            box-shadow: 0px 0px 5px 5px rgb(49, 48, 48);
+        }
+        
+        hr {
+            background: blue;
+        }
+        
+        .wikit {
+            background: rgba(0, 0, 0, 0.7);
+            box-shadow: 0px 0px 5px 5px rgb(49, 48, 48);
+        }
+        
+        img.round {
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <%- include('../partials/navbar'); %>
+
+        <div class="my">
+
+            <section id="Home">
+
+                <img src="https://www.squadhelp.com/blog/wp-content/uploads/2016/08/Food-blog-Copyright.jpg" id="home-bg-img" autoplay loop muted playinline type="video/mp4">
+                </video>
+
+                <div id="home-overlay">
+                    <div class="container">
+                        <div id="home-content">
+                            <div id="home-content-inner" class="text-center">
+                                <div id="home-heading">
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <div class="wikit">
+                                        <section id="submitmyrecipe">
+                                            <h1 id="home-heading-1">See </h1>
+                                            <h2 id="home-heading-2"> Amazing
+                                                <span>Recipes</span>
+                                                </h1>
+                                                <div id="home-text">
+                                                    <p>Here you can view multiple recipes of dishes</p>
+                                                    <p>And even add your own recipes by submiting it on our webpage</p>
+
+                                                </div>
+                                                <div id="home-btn">
+                                                    <a class="btn btn-primary text-white btn-lg  m-lg-auto" role="button" href="/createrecipe">Create my recipe</a>
+
+                                                </div>
+                                        </section>
+                                        <br>
+                                        <br>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <section class="our_recipes" id="our_recipes">
+                <div class="my">
+                    <div class="container">
+                        <div class="wikit">
+                            <div class="row">
+                                <div class="offset-sm-2 col-sm-8">
+                                    <div class="headerText text-center text-white">
+                                        </br>
+                                        </br>
+                                        </br>
+                                        </br>
+
+                                        <h1>Our Amazing Recipes</h1>
+
+                                        </br>
+                                        <p>A complete centralized Lawyer Digital Diary.</p>
+
+                                        </br>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-md-4 col-sm-4 col-8">
+                                        <div class="card shadow" style="width: 20rem;">
+                                            <div class="inner">
+                                                <img src="https://i.ytimg.com/vi/Qa1Ov_LxXvE/maxresdefault.jpg" class="card-img-top" alt="...">
+                                            </div>
+                                            <div class="card-body text-center">
+                                                <h5 class="card-title">Creat Diary</h5>
+                                                <p class="card-text">Now you you can have a record of your diary by creating it</p>
+                                                <a href="http://localhost:4200/login" class="btn btn-success">See this recipe</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-12">
+
+                                        <div class="card shadow" style="width: 20rem;">
+                                            <div class="inner">
+
+                                                <img src="https://kfoods.com/images1/newrecipeicon/special-chinese-rice_12493.jpg" class="img-fluid" class="card-img-top" alt="...">
+                                            </div>
+                                            <div class="card-body text-center">
+                                                <h5 class="card-title">See Record</h5>
+                                                <p class="card-text">After creating your record you can see how it looks.</p>
+                                                <a href="http://localhost:4200/login" class="btn btn-success">See this recipe</a>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-8">
+                                        <div class="card shadow" style="width: 20rem" "heigh: 90rem;">
+                                            <div class="inner">
+                                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmcPOsLEbAHJK3dk3eKcrpnnDAgE-1W5Bqsw&usqp=CAU" class="img-fluid" class="card-img-top" alt="...">
+                                            </div>
+
+                                            <div class="card-body text-center">
+                                                <h5 class="card-title">Update Diary</h5>
+                                                <p class="card-text">You can bring changes to the records you have just created.</p>
+                                                <a href="http://localhost:4200/login" class="btn btn-success">See this recipe</a>
+
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <br>
+                                        <br>
+
+                                    </div>
+
+
+
+                                    <div class="col-md-4 col-sm-4 col-8">
+                                        <div class="card shadow" style="width: 20rem;">
+                                            <div class="inner">
+                                                <img src="https://i.ytimg.com/vi/Qa1Ov_LxXvE/maxresdefault.jpg" class="card-img-top" alt="...">
+                                            </div>
+                                            <div class="card-body text-center">
+                                                <h5 class="card-title">Creat Diary</h5>
+                                                <p class="card-text">Now you you can have a record of your diary by creating it</p>
+                                                <a href="http://localhost:4200/login" class="btn btn-success">See this recipe</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-12">
+
+                                        <div class="card shadow" style="width: 20rem;">
+                                            <div class="inner">
+
+                                                <img src="https://kfoods.com/images1/newrecipeicon/special-chinese-rice_12493.jpg" class="img-fluid" class="card-img-top" alt="...">
+                                            </div>
+                                            <div class="card-body text-center">
+                                                <h5 class="card-title">See Record</h5>
+                                                <p class="card-text">After creating your record you can see how it looks.</p>
+                                                <a href="http://localhost:4200/login" class="btn btn-success">See this recipe</a>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-8">
+                                        <div class="card shadow" style="width: 20rem" "heigh: 90rem;">
+                                            <div class="inner">
+                                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmcPOsLEbAHJK3dk3eKcrpnnDAgE-1W5Bqsw&usqp=CAU" class="img-fluid" class="card-img-top" alt="...">
+                                            </div>
+
+                                            <div class="card-body text-center">
+                                                <h5 class="card-title">Update Diary</h5>
+                                                <p class="card-text">You can bring changes to the records you have just created.</p>
+                                                <a href="http://localhost:4200/login" class="btn btn-success">See this recipe</a>
+
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <br>
+                                        <br>
+                                    </div>
+
+
+
+                                    <br>
+                                    <br>
+                                    <br>
+
+
+
+
+                                    <div class="col-md-4 col-sm-4 col-8">
+                                        <div class="card shadow" style="width: 20rem;">
+                                            <div class="inner">
+                                                <img src="https://i.ytimg.com/vi/Qa1Ov_LxXvE/maxresdefault.jpg" class="card-img-top" alt="...">
+                                            </div>
+                                            <div class="card-body text-center">
+                                                <h5 class="card-title">Creat Diary</h5>
+                                                <p class="card-text">Now you you can have a record of your diary by creating it</p>
+                                                <a href="http://localhost:4200/login" class="btn btn-success">See this recipe</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-12">
+
+                                        <div class="card shadow" style="width: 20rem;">
+                                            <div class="inner">
+
+                                                <img src="https://kfoods.com/images1/newrecipeicon/special-chinese-rice_12493.jpg" class="img-fluid" class="card-img-top" alt="...">
+                                            </div>
+                                            <div class="card-body text-center">
+                                                <h5 class="card-title">See Record</h5>
+                                                <p class="card-text">After creating your record you can see how it looks.</p>
+                                                <a href="http://localhost:4200/login" class="btn btn-success">See this recipe</a>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-8">
+                                        <div class="card shadow" style="width: 20rem" "heigh: 90rem;">
+                                            <div class="inner">
+                                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmcPOsLEbAHJK3dk3eKcrpnnDAgE-1W5Bqsw&usqp=CAU" class="img-fluid" class="card-img-top" alt="...">
+                                            </div>
+
+                                            <div class="card-body text-center">
+                                                <h5 class="card-title">Update Diary</h5>
+                                                <p class="card-text">You can bring changes to the records you have just created.</p>
+                                                <a href="http://localhost:4200/login" class="btn btn-success">See this recipe</a>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                        </div>
+
+
+                    </div>
+
+            </section>
+
+            <br>
+            <div class="my">
+
+                <section id="ContactUs">
+                    <div class="container Contact-form">
+
+                        <br>
+                        <h1>Contact Form</h1>
+                        <hr>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <address>
+                               Address:- House Number#412 Street#33 Phase-4A, Islamabad
+                            </address>
+                                <p>Email:- 170744@students.au,edu.pk</p>
+                                <p>Phone-number:- 03335603085</p>
+
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Your Name</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>Your Email</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>Your Message</label>
+                                    <textarea class="form-control" rows="7"></textarea>
+                                </div>
+                                <br>
+                                <div class="form-group">
+
+                                    <button class="btn btn-primary btn-block"> Send </button>
+                                </div>
+                                <div id="btnFloatRight" style="position:fixed;right:0;bottom:0;margin-right:10px;margin-bottom:10px;">
+                                    <a href="https://www.facebook.com/LawyerDiaries/" target="_blank"><img height="30" width="30" src="http://lawyerdiaries.com/Content/Theme/img/Facebook.png"></a>
+                                    <a href="https://twitter.com/lawyerdiaires" target="_blank"><img height="30" width="30" src="http://lawyerdiaries.com/Content/Theme/img/Twitter.png"></a>
+                                    <a href="https://plus.google.com/+Lawyerdiaries" target="_blank"><img height="30" width="30" src="http://lawyerdiaries.com/Content/Theme/img/Google.png"></a>
+                                    <a href="https://www.instagram.com/lawyerdiaries/" target="_blank"><img height="30" width="30" src="http://lawyerdiaries.com/Content/Theme/img/Instagram.png"></a>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+            </div>
+            </section>
+            <div class="my">
+                <br>
+                <br>
+                <br>
+            </div>
+
+
+
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
+            <script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
+
+</body>
+
+</html>
